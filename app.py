@@ -19,11 +19,11 @@ with col2:
 col_stmt, col_jv = st.columns(2)
 with col_stmt:
     st.subheader("1. วางข้อมูล Statement")
-    stmt_text = st.text_area("Copy วันที่ และ ยอดเงิน มาวางที่นี่", height=200)
+    stmt_text = st.text_area("Copy วันที่ และ ยอดเงิน มาวางที่นี่", height=200, key="stmt_box")
 
 with col_jv:
     st.subheader("2. วางข้อมูล JV")
-    jv_text = st.text_area("Copy วันที่ และ ยอดเงิน มาวางที่นี่", height=200)
+    jv_text = st.text_area("Copy วันที่ และ ยอดเงิน มาวางที่นี่", height=200, key="jv_box")
 
 # ฟังก์ชันทำความสะอาดข้อมูล (Data Cleaning & Parsing)
 def parse_data(text_data):
